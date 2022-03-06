@@ -1,0 +1,416 @@
+@font-face {
+   font-family: 'FontPastel';
+   src: url('./assets/fonts/Pastel\ Colors\ -\ Personal\ Use.ttf') format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+header {
+    background-color: rgb(255, 231, 236);
+    padding: 30px;
+    text-align: center;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(214, 214, 214);
+}         
+.main-container {
+    box-sizing: border-box;
+    background-color: rgb(129, 53, 20);;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 0px;
+  }
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:2vw;
+    text-align: center;
+    align-items: center;
+    } 
+    nav li{
+    display:inline-block;
+    width:18%;
+    padding:0.7vh vw/5;
+    background-color:rgb(129, 53, 20);
+    border:0.05vw solid rgb(129, 53, 20);     /* borde del mismo color que el fondo */
+    color:#fff;
+    text-align: center;
+    align-items: center;
+    }
+    nav li:hover{
+    background-color:rgb(92, 38, 14);
+    color:rgb(255, 195, 126);
+    }
+
+    .tittle-menu-container {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        float: left;
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+        text-align: center;
+        font-family: FontPastel;
+        color: white;
+        -webkit-text-stroke: 0.05vw black;
+        background-color: rgb(214, 214, 214);
+        font-size: 3vw;
+      }
+    .menu-container {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        float: left;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        align-items: center;
+      }
+        .img-texto {
+        position: relative;
+        align-items: center;
+        float: left;
+        height: 100%;
+        width: 20%;
+        overflow: hidden;
+        background-color: #acc454;
+        }
+        
+        .img-texto img{
+        width: 100%;
+        }
+        
+        .img-texto .informacion{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: #848282;
+        opacity:0.8;
+        padding: 10%;
+        font-family: sans-serif;
+        max-height: 40%;
+        overflow: auto;
+        }
+        .img-texto .precio{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        z-index: 999;
+        background: #000000;
+        opacity:0.5;
+        font-family: sans-serif;
+        color: white;
+        max-height: 2vw;
+        font-size: 1vw;
+        overflow: auto;
+        }
+        
+        .img-texto .informacion h2{
+        font-size: 2vw;
+        text-transform: uppercase;
+        color: #acc454;
+        }
+        
+        .img-texto .informacion p {
+        color: #fff;
+        font-size: 1.4vw;
+        width: 90%;
+        text-align: justify;
+        }
+        .contenedordeinicio{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            height: 80%;
+        }
+        .contenedordeinicio img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .texto-encimado-titulo{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            color: #fff;
+            -webkit-text-stroke: 0.05vw black;
+            font-family:FontPastel;
+            transform: translate(-50%, -50%);
+            font-size: 5vw;
+        }
+        .texto-encimado-subtitulo{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            color: #fff;
+            -webkit-text-stroke: 0.05vw black;
+            font-family:FontPastel;
+            transform: translate(-50%, -50%);
+            font-size: 3vw;
+        }
+        /*-- BOTONES--*/
+        .buttonformulario {
+            display: inline-block;
+            border-radius: 2%;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 1.8vw;
+            padding: calc(1.5vw);
+            width: calc(15vw);
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 0px;
+            position: absolute;
+            top: 60%;
+            left: 25%;
+          }
+          
+          .buttonformulario span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .buttonformulario span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20%;
+            transition: 0.5s;
+          }
+          
+          .buttonformulario:hover span {
+            padding-right: 25%;
+          }
+          
+          .buttonformulario:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+          .form-container {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            float: left;
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            align-items: center;
+            background-color: rgb(214, 214, 214);
+          }
+          .form-container .formcontainer {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            align-items: center;
+            float: left;
+            height: 100%;
+            width: 40%;
+            overflow: hidden;
+            transform: translate(-50%, 0%);
+            }
+            .form-container .checkcontainer {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                align-items: center;
+                float: left;
+                height: 100%;
+                width: 40%;
+                overflow: hidden;
+                transform: translate(-50%, -50%);
+                }
+
+             
+            .formcontainer .input2, .formcontainer textarea{
+                margin-bottom: calc(1.5vw);
+                font-family: "Roboto", sans-serif;
+                width: 100%;
+                padding: .8vw;
+                box-sizing: border-box; 
+                border: none; 
+                color: #525c66; 
+                font-size: 1.3vw;
+                resize: none; 
+              }
+              
+              .formcontainer button {
+                  display: block;
+                  background-color: #0095eb;
+                  padding: 10px 45px 10px 45px;
+                  border: 0;
+                  font-size: 1.3vw; 
+                  color: 	white;
+                font-family: "Roboto", sans-serif;
+              }
+              .formcontainer button:hover{
+                  background-color: #046193;
+              }
+              textarea {  resize: none;}
+
+              .containercheck {
+                display: block;
+                position: relative;
+                padding-left: 2vw;
+                margin-bottom: 1.2vw;
+                cursor: pointer;
+                font-size: 2vw;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              }
+              
+              /* Hide the browser's default checkbox */
+              .containercheck input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+              }
+              
+              /* Create a custom checkbox */
+              .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1.8vw;
+                width: 1.8vw;
+                background-color: #eee;
+              }
+              
+              /* On mouse-over, add a grey background color */
+              .containercheck:hover input ~ .checkmark {
+                background-color: #ccc;
+              }
+              
+              /* When the checkbox is checked, add a blue background */
+              .containercheck input:checked ~ .checkmark {
+                background-color: #2196F3;
+              }
+              
+              /* Create the checkmark/indicator (hidden when not checked) */
+              .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              
+              /* Show the checkmark when checked */
+              .containercheck input:checked ~ .checkmark:after {
+                display: block;
+              }
+              
+              /* Style the checkmark/indicator */
+              .containercheck .checkmark:after {
+                left: 30%;
+                top: 15%;
+                width: 0.35vw;
+                height: 0.7vw;
+                border: solid white;
+                border-width: 0 .18vw .18vw 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+              }
+
+
+              .containerradio {
+                display: block;
+                position: relative;
+                padding-left: 2vw;
+                margin-bottom: 1.2vw;
+                cursor: pointer;
+                font-size: 2vw;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              }
+              
+              /* Hide the browser's default radio button */
+              .containerradio input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+              }
+              
+              /* Create a custom radio button */
+              .checkmark2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1.8vw;
+                width: 1.8vw;
+                background-color: #eee;
+                border-radius: 50%;
+              }
+              
+              /* On mouse-over, add a grey background color */
+              .containerradio:hover input ~ .checkmark2 {
+                background-color: #ccc;
+              }
+              
+              /* When the radio button is checked, add a blue background */
+              .containerradio input:checked ~ .checkmark2 {
+                background-color: #2196F3;
+              }
+              
+              /* Create the indicator (the dot/circle - hidden when not checked) */
+              .checkmark2:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              
+              /* Show the indicator (dot/circle) when checked */
+              .containerradio input:checked ~ .checkmark2:after {
+                display: block;
+              }
+              
+              /* Style the indicator (dot/circle) */
+              .containerradio .checkmark2:after {
+                   top: 30%;
+                  left: 30%;
+                  width: .7vw;
+                  height: .7vw;
+                  border-radius: 50%;
+                  background: white;
+              }
+              footer {
+                padding: 10px;
+                text-align: justify;
+                color: white;
+                background-color: rgb(92, 38, 14);
+            }
+            footer h1{
+              text-align: center;
+              font-family:FontPastel;
+              font-size: 4vw;
+            -webkit-text-stroke: 0.05vw black;
+            }
+            .centercontainer {
+              position: relative;
+              font-size: 1vw;
+              left: 50%;
+              height: 100%;
+              width: 10%;
+              overflow: hidden;
+              transform: translate(-50%, 0%); /*esto posiciona el zero en el centro*/
+              }
